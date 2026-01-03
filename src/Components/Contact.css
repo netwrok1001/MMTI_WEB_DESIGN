@@ -1,0 +1,300 @@
+.contact {
+    width: 100%;
+    background: linear-gradient(135deg, #0f2c5f 0%, #1e3a5f 100%);
+    color: #fff;
+    padding: 4rem 0 0;
+    margin-top: 3rem;
+}
+
+.contact-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+    align-items: start;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 0;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.office-section {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    transition: all 0.3s ease;
+}
+
+.office-section:hover {
+    background: rgba(0, 212, 255, 0.12);
+    border-color: rgba(0, 212, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.office-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #00d4ff;
+    font-weight: 700;
+}
+
+.office-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.office-address {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.detail-group {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 3px solid #00d4ff;
+}
+
+.detail-group h4 {
+    font-size: 0.9rem;
+    color: #00d4ff;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-group p {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    opacity: 0.95;
+    line-height: 1.5;
+}
+
+.detail-group a {
+    color: #fff;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.detail-group a:hover {
+    color: #00d4ff;
+    text-decoration: underline;
+}
+
+.qr-section {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.qr-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 212, 255, 0.3);
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.qr-box:hover {
+    background: rgba(0, 212, 255, 0.15);
+    border-color: rgba(0, 212, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.qr-image {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    display: block;
+}
+
+.qr-download {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.qr-download img {
+    display: block;
+}
+
+.qr-text {
+    font-size: 0.95rem;
+    color: #00d4ff;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-details {
+        grid-template-columns: 1fr;
+    }
+
+    .qr-section {
+        padding: 1.5rem 0 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 0 1.5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        padding: 2rem 0;
+        gap: 1.5rem;
+    }
+
+    .office-section {
+        padding: 1.5rem;
+    }
+
+    .office-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .office-address {
+        font-size: 0.9rem;
+    }
+
+    .contact-details {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .detail-group {
+        padding: 0.8rem;
+    }
+
+    .detail-group h4 {
+        font-size: 0.8rem;
+    }
+
+    .detail-group p {
+        font-size: 0.85rem;
+    }
+
+    .qr-section {
+        padding: 1.5rem 0 0 0;
+    }
+
+    .qr-box {
+        padding: 1.2rem;
+    }
+
+    .qr-image {
+        max-width: 200px;
+    }
+
+    .footer-bottom {
+        padding: 1.5rem 0;
+    }
+
+    .footer-bottom p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 0 1rem;
+    }
+
+    .contact-content {
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    .office-section {
+        padding: 1.2rem;
+    }
+
+    .office-section h3 {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .office-name {
+        font-size: 1rem;
+    }
+
+    .office-address {
+        font-size: 0.85rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    .contact-details {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .detail-group {
+        padding: 0.6rem;
+    }
+
+    .detail-group h4 {
+        font-size: 0.75rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .detail-group p {
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .qr-box {
+        padding: 1rem;
+    }
+
+    .qr-image {
+        max-width: 150px;
+        margin-bottom: 0.6rem;
+    }
+
+    .qr-text {
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+        padding: 1rem 0;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .partner-logo  {
+        height: 35px;
+       
+    }
+}

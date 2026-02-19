@@ -12,14 +12,15 @@ import Modal from './Components/Modal'
 function App() {
   return (
     <Router>
+       <Navbar />
       <Modal />
-      <Navbar />
+     
       <Routes>
         <Route path="/" element={
           <>
             <Hero />
-            <About />
             <Courses />
+            <About />
             <Faculty />
             <Contact />
           </>

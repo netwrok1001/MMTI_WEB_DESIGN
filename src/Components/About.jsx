@@ -70,7 +70,7 @@ export default function About() {
                     </div>
 
                     <div className="quality-policy">
-                        <h3>Quality Policy</h3>
+                        <h3>Quality Po(ISO CL. 5.2.1)</h3>
                         <p>
                             We at MMTI strive to provide maritime training of the highest standard to serving, or those intending 
                             to serve in the Merchant Navy, so that we have Safer and Securer Ships and Cleaner Seas. 

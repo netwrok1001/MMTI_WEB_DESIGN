@@ -33,8 +33,14 @@ a:hover {
   color: var(--accent-dark);
 }
 
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
   min-width: 320px;
   background: #fff;
 }

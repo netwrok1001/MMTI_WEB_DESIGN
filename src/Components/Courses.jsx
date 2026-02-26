@@ -61,7 +61,7 @@ export default function Courses() {
         }
     ];
 
-    const filterOptions = ['All', 'Modular Courses', 'Package Courses', "Refresher's Courses", 'Competency Courses', 'Simulator Courses'];
+    const filterOptions = ['All', 'Modular Courses', 'Package Courses', "Refresher's Courses", 'Competency Courses', 'Simulator Courses','Value addition courses','UK – MCA approved courses'];
 
     const filteredCourses = activeFilter === 'All' ? courses : courses.filter(course => course.type === activeFilter);
 

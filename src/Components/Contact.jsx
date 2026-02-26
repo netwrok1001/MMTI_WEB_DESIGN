@@ -1,102 +1,141 @@
+import React, { useState, useEffect } from 'react';
 import './Contact.css';
 
 export default function Contact() {
+    const [phase, setPhase] = useState(1);
+    const [fade, setFade] = useState(true);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFade(false);
+            setTimeout(() => {
+                setPhase(prev => prev === 1 ? 2 : 1);
+                setFade(true);
+            }, 500); // Wait for fade out before changing content
+        }, 5000); // Change every 5 seconds
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
-        <footer id="contact" className="contact">
+        <section id="contact" className="contact">
+            <div className="contact-overlay"></div>
             <div className="contact-container">
-                {/* Main Contact Info */}
-                <div className="contact-content">
-                    {/* Mumbai Head Office */}
-                    <div className="office-section">
-                        <h3>🏢 MMTI Head Office & Training Centre</h3>
-                        <p className="office-name">Mumbai Maritime Training Institute</p>
-                        <p className="office-address">
-                            2nd floor, 41/B, New Excel House, Azad Nagar Road No. 2,<br />
-                            Veera Desai Road, Andheri (West), Mumbai – 400 053
-                        </p>
-
-                        <div className="contact-details">
-                            <div className="detail-group">
-                                <h4>Course Booking</h4>
-                                <p>📧 <a href="mailto:mmti97@yahoo.com">mmti97@yahoo.com</a></p>
-                                <p>📧 <a href="mailto:mmti53@hotmail.com">mmti53@hotmail.com</a></p>
-                                <p>📞 <a href="tel:8976008861">8976008861</a> / <a href="tel:9136397577">91363 97577</a></p>
+                <h2 className="contact-title">CONTACT US</h2>
+                
+                <div className="contact-wrapper">
+                    {/* Left Column: Form */}
+                    <div className="contact-form-column">
+                        <form className="contact-form">
+                            <div className="form-group">
+                                <label htmlFor="name">Name</label>
+                                <input type="text" id="name" className="form-input" />
                             </div>
 
-                            <div className="detail-group">
-                                <h4>Documents Submission</h4>
-                                <p>📧 <a href="mailto:modulartwo@mmti.co.in">modulartwo@mmti.co.in</a></p>
-                                <p>📱 <a href="https://wa.me/918097008862">8097008862</a> / <a href="https://wa.me/919136397577">91363 97577</a> (WhatsApp)</p>
+                            <div className="form-group">
+                                <label htmlFor="email">E-mail</label>
+                                <input type="email" id="email" className="form-input" />
                             </div>
 
-                            <div className="detail-group">
-                                <h4>Course Details</h4>
-                                <p>📧 <a href="mailto:mmti.mumbai@gmail.com">mmti.mumbai@gmail.com</a></p>
-                                <p>📧 <a href="mailto:mmti97@yahoo.com">mmti97@yahoo.com</a></p>
-                                <p>📞 <a href="tel:8976008861">8976008861</a> / <a href="tel:8097008862">8097008862</a></p>
+                            <div className="form-group">
+                                <label htmlFor="contact">Contact No.</label>
+                                <input type="tel" id="contact" className="form-input" />
                             </div>
 
-                            <div className="detail-group">
-                                <h4>Verification</h4>
-                                <p>📧 <a href="mailto:verify.mmtimum@gmail.com">verify.mmtimum@gmail.com</a></p>
-                                <p>📞 <a href="tel:8976008861">8976008861</a></p>
+                            
+
+                            
+                            <div className="form-checkbox">
+                                <label className="checkbox-container">
+                                    <input type="checkbox" />
+                                    <span className="checkmark"></span>
+                                    <span className="checkbox-label">I agree to the <span className="highlight">processing</span> of the personal data provided</span>
+                                </label>
                             </div>
-                        </div>
+
+                            <button type="submit" className="send-btn">SEND</button>
+                        </form>
                     </div>
 
-                    {/* Valsad Office */}
-                    <div className="office-section">
-                        <h3>🏢 Valsad Booking Office</h3>
-                        <p className="office-address">
-                            1ST FLOOR LENWALA COMPLEX, PARADISE HOTEL,<br />
-                            NEAR LAXMI CINEMA HALL, STATION ROAD VALSAD
-                        </p>
-                        <div className="contact-details">
-                            <div className="detail-group">
-                                <p>📱 <a href="tel:9825512967">9825512967</a></p>
-                                <p>📧 <a href="mailto:kamleshprakashpal@gmail.com">kamleshprakashpal@gmail.com</a></p>
-                                <p>📧 <a href="mailto:valsadmmti84@gmail.com">valsadmmti84@gmail.com</a></p>
+                    {/* Right Column: Info */}
+                    <div className="contact-info-column">
+                        <div className="contact-details-text">
+                            <h3 className="institute-name">Mumbai Maritime Training <br />Institute</h3>
+                            <p className="address-text">
+                                2nd floor, 41/B, New Excel House, Azad Nagar <br /> Road No. 2,
+                                Veera Desai Road, Andheri (West), <br />Mumbai – 400 053
+                            </p>
+                            
+                            <div className="contact-links">
+                                {/* Contact details moved to the dialogue box below */}
                             </div>
                         </div>
-                    </div>
 
-                    {/* Online & Social */}
-                    <div className="office-section">
-                        <h3>🌐 Online Booking & Social</h3>
-                        <div className="contact-details">
-                            <div className="detail-group">
-                                <h4>Website Booking</h4>
-                                <p><a href="http://www.mmti.co.in" target="_blank" rel="noopener noreferrer">www.mmti.co.in</a></p>
-                                <p><a href="http://www.mmtimumbai.in" target="_blank" rel="noopener noreferrer">www.mmtimumbai.in</a></p>
-                            </div>
-                            <div className="detail-group">
-                                <h4>Social Media</h4>
-                                <p>📘 <a href="https://www.facebook.com/profile.php?id=100008920982506" target="_blank" rel="noopener noreferrer">mmti.mumbai</a></p>
-                                <p>📱 <a href="https://wa.me/918097008862">WhatsApp: 8097008862 / 91363 97577</a></p>
-                            </div>
+                        <div className="map-placeholder">
+                             {/* Placeholder for the ship icon aesthetic */}
+                             <div className="world-map-graphic">
+                                🚢
+                             </div>
                         </div>
                     </div>
                 </div>
 
-                {/* QR Code Section */}
-                <div className="qr-section">
-                    <div className="qr-box">
-                            <a href="./img/qrcodes.png" download="mmti-qrcodes.png" className="qr-download">
-                                <img src="./img/qrcodes.png" alt="MMTI QR Codes" className="qr-image" />
-                            </a>
-                            <p className="qr-text">Scan to Visit Us — click image to download</p>
-                        </div>
+                {/* Blank Translucent Dialogue Box */}
+                <div className="dialogue-box">
+                    <div className={`dialogue-content ${fade ? 'fade-in' : 'fade-out'}`}>
+                        {phase === 1 ? (
+                            <div className="dialogue-grid">
+                                <div className="dialogue-item">
+                                    <strong>E-mail for Documents Submission:</strong><br />
+                                    <a href="mailto:modulartwo@mmti.co.in">modulartwo@mmti.co.in</a>
+                                </div>
+                                <div className="dialogue-item">
+                                    <strong>Whatsapp No for Documents Submission:</strong><br />
+                                    <a href="tel:8097008862">8097008862</a> / <a href="tel:9136397577">91363 97577</a>
+                                </div>
+                                <div className="dialogue-item">
+                                    <strong>E-mail for Course details:</strong><br />
+                                    <a href="mailto:mmti.mumbai@gmail.com">mmti.mumbai@gmail.com</a> & <a href="mailto:mmti97@yahoo.com">mmti97@yahoo.com</a>
+                                </div>
+                                <div className="dialogue-item">
+                                    <strong>Contact No Course details:</strong><br />
+                                    <a href="tel:8976008861">8976008861</a> / <a href="tel:8097008862">8097008862</a>
+                                </div>
+                            </div>
+                        ) : (
+                            <div className="dialogue-grid">
+                                <div className="dialogue-item">
+                                    <strong>E-mail for Verification:</strong><br />
+                                    <a href="mailto:verify.mmtimum@gmail.com">verify.mmtimum@gmail.com</a>
+                                </div>
+                                <div className="dialogue-item">
+                                    <strong>Contact No for Verification:</strong><br />
+                                    <a href="tel:8976008861">8976008861</a>
+                                </div>
+                                <div className="dialogue-item">
+                                    <strong>For ONLINE BOOKING:</strong><br />
+                                    <a href="http://www.mmti.co.in" target="_blank" rel="noopener noreferrer">www.mmti.co.in</a> & <a href="http://www.mmtimumbai.in" target="_blank" rel="noopener noreferrer">www.mmtimumbai.in</a>
+                                </div>
+                                <div className="dialogue-item">
+                                    <strong>Facebook:</strong><br />
+                                    <a href="https://www.facebook.com/mmti.mumbai" target="_blank" rel="noopener noreferrer">mmti.mumbai</a>
+                                </div>
+                                <div className="dialogue-item">
+                                    <strong>Whatsapp No.:</strong><br />
+                                    <a href="tel:8097008862">8097008862</a> / <a href="tel:9136397577">91363 97577</a>
+                                </div>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
 
             <div className="footer-bottom">
                 <p>&copy; 2025 Mumbai Maritime Training Institute. All rights reserved.</p>
-                <p>Celebrating 27 Years of Excellence in Maritime Training</p>
                 <div className="partner-logo">
                     <img src="./img/DNVLogo.jpg" alt="DNV Partner" />
-                  
                 </div>
             </div>
-        </footer>
+        </section>
     );
 }

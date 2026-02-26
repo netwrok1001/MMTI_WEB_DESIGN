@@ -1,5 +1,6 @@
 import './Hero.css';
 import { useEffect, useState } from 'react';
+import CircularGallery from '../../../src/bits/CircularGallery'
 
 export default function Hero() {
     const dialogues = [
@@ -45,8 +46,20 @@ export default function Hero() {
                         <a href="#courses" className="cta-button primary">Explore Courses</a>
                         <a href="#about" className="cta-button secondary">Learn More</a>
                     </div>
+
+                    <div className="hero-logos">
+                    <img src="./img/Picture2.png" alt="Picture 2" className="logo" />
+                    <img src="./img/Picture3.png" alt="Picture 3" className="logo" />
+                    <img src="./img/DNVLogo.jpg" alt="DNV Logo" className="logo" />
+                    <img src="./img/MMTI logo.jpg" alt="MMTI Logo" className="logo" />
                 </div>
+
+                </div>
+                 
+                
+
                 <div className="hero-stats">
+                       
                     <div className="stat-card">
                         <div className="stat-number">27+</div>
                         <div className="stat-label">Years of Excellence</div>
@@ -59,7 +72,9 @@ export default function Hero() {
                         <div className="stat-number">100%</div>
                         <div className="stat-label">STCW Compliant</div>
                     </div>
+                    
                 </div>
+                
             </div>
 
         </section>
@@ -83,10 +98,21 @@ export default function Hero() {
             <div className="hero-content">
                 <div className="hero-text">
                     <h1 className="hero-title-2">QUALITY POLICY (ISO CL. 5.2.1)</h1>
-                    <p className="hero-subtitle-2">We at MMTI strive to provide maritime training of the highest standard to serving, or those intending to serve in the Merchant Navy, so that we have Safer and Securer Ships and Cleaner Seas. We aim to achieve this by explicitly complying with the STCW Convention as amended and all related National Legislation.</p>
+                    <p className="hero-subtitle-2">We at MMTI strive to provide maritime training of the highest standard to
+                         serving, or those intending to serve in the Merchant Navy, so that we have Safer and Securer Ships
+                          and Cleaner Seas. We aim to achieve this by explicitly complying with the STCW Convention as 
+                          amended and all related National Legislation.</p>
                     
                 </div>
-               
+                
+                <div className="circular-gallery-container">
+                  <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02}
+                  bend={1}
+                  borderRadius={0.05}
+                  scrollSpeed={2}
+                  scrollEase={0.05}
+                />
+                </div>
             </div>
 
         </section>
@@ -107,7 +133,7 @@ export default function Hero() {
 Mumbai Maritime Training Institute</p>
                     
                 </div>
-               
+             
             </div>
 
         </section>

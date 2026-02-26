@@ -7,24 +7,31 @@ import Courses from './Components/Courses'
 import Faculty from './Components/Faculty'
 import Contact from './Components/Contact'
 import PhotoGallery from './pages/Photo_gallery'
+import Library from './pages/Library'
+import News from './pages/News'
 import Modal from './Components/Modal'
 
 function App() {
   return (
     <Router>
+       <Navbar />
       <Modal />
-      <Navbar />
+     
       <Routes>
         <Route path="/" element={
           <>
             <Hero />
-            <About />
             <Courses />
-            <Faculty />
-            <Contact />
+             <Contact />
+              <Faculty />
+            <About />
+           
+            
           </>
         } />
         <Route path="/gallery" element={<PhotoGallery />} />
+        <Route path="/library" element={<Library />} />
+        <Route path="/news" element={<News />} />
       </Routes>
     </Router>
   )

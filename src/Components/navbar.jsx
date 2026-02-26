@@ -53,7 +53,7 @@ export default function Navbar() {
             <div className="navbar-container">
                 <div className="navbar-logo">
                     <img src="./img/MMTI logo.jpg" alt="MMTI Logo" className="logo-img" />
-                    <img src="./img/DNVLogo.jpg" alt="MMTI Logo" className="logo-img" />
+                   
                     <span className="logo-text">MMTI</span>
                     
                     
@@ -73,14 +73,8 @@ export default function Navbar() {
                         <a href="#about" className="nav-link" onClick={(e) => handleNavClick(e, '#about')}>About</a>
                     </li>
                     <li className="nav-item dropdown">
-                        <a href="#courses" className="nav-link" onClick={(e) => handleCoursesClick(e)}>Courses ▼</a>
-                        <ul className="dropdown-menu">
-                            <li><a href="#courses" className="dropdown-link" onClick={(e) => handleNavClick(e, '#courses')}>Modular Courses</a></li>
-                            <li><a href="#courses" className="dropdown-link" onClick={(e) => handleNavClick(e, '#courses')}>Package Courses</a></li>
-                            <li><a href="#courses" className="dropdown-link" onClick={(e) => handleNavClick(e, '#courses')}>Refresher's Courses</a></li>
-                            <li><a href="#courses" className="dropdown-link" onClick={(e) => handleNavClick(e, '#courses')}>Competency Courses</a></li>
-                            <li><a href="#courses" className="dropdown-link" onClick={(e) => handleNavClick(e, '#courses')}>Simulator Courses</a></li>
-                        </ul>
+                        <a href="#courses" className="nav-link" onClick={(e) => handleCoursesClick(e)}>Courses </a>
+                        
                     </li>
                     <li className="nav-item">
                         <a href="#faculty" className="nav-link" onClick={(e) => handleNavClick(e, '#faculty')}>Faculty</a>
@@ -90,6 +84,12 @@ export default function Navbar() {
                     </li>
                     <li className="nav-item">
                         <Link to="/gallery" className="nav-link" onClick={closeMenu}>Photo Gallery</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/library" className="nav-link" onClick={closeMenu}>Library</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/news" className="nav-link" onClick={closeMenu}>News</Link>
                     </li>
                     <li className="nav-item">
                         <a href="#book" className="nav-link nav-cta" onClick={(e) => handleNavClick(e, '#book')}>Book Now</a>

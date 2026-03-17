@@ -72,8 +72,8 @@ export default function Navbar() {
                     <li className="nav-item">
                         <a href="#about" className="nav-link" onClick={(e) => handleNavClick(e, '#about')}>About</a>
                     </li>
-                    <li className="nav-item dropdown">
-                        <a href="#courses" className="nav-link" onClick={(e) => handleCoursesClick(e)}>Courses </a>
+                    <li className="nav-item">
+                        <a href="#courses" className="nav-link" onClick={(e) => handleCoursesClick(e,'#courses')}>Courses </a>
                         
                     </li>
                     <li className="nav-item">

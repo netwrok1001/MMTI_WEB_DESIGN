@@ -1,9 +1,12 @@
 import './Faculty.css';
 
 export default function Faculty() {
-    const facultyData = [
+    const directorData = [
         { id: '', name: 'CAPT. C. L. DUBEY, TRUSTEE / DIRECTOR' },
         { id: '', name: 'CAPT. O. P. YADAV, TRUSTEE / DIRECTOR' },
+    ]
+
+    const facultyData = [
         { id: '1', name: 'CAPT. F. X. COUTINHO, PRINCIPAL' },
         { id: '2', name: 'CAPT. M. R. MARTINS, VICE -PRINCIPAL' },
         { id: '3', name: 'CAPT.S.K.SHARMA' },
@@ -33,30 +36,43 @@ export default function Faculty() {
         { id: '27', name: 'MR. SHER BAHADUR YADAV, INSTR.' },
         { id: '28', name: 'MR. S.K.CHAUHAN, INSTR.' }
     ];
+    const mid = Math.ceil(facultyData.length / 2);
+    const leftData = facultyData.slice(0, mid);
+    const rightData = facultyData.slice(mid);
 
     return (
         <section id="faculty" className="faculty">
-            <div className="faculty-container">
-                <div className="faculty-header">
-                    <h2 className="section-title">Our Faculty</h2>
-                    <div className="section-accent"></div>
-                    <p className="faculty-subtitle">
-                        The MMTI is proud of having one of the best faculty in Maritime Training sector. The faculties here are of diversified nature such as Master Mariners, Chief Engineer, MBBS (Doctor), H.R.D Personnel, Radio Officers & Indian Navy instructors. Most of the faculty is highly qualified well experienced in Maritime training and best in the art of sharing knowledge.
-                        <br /><br />
-                        Presently there are 3 extra masters who are teaching at MMTI Andheri (W) campus. Eg: Capt. C.L. Dubey, Capt.L.K.Panda (Visiting).
-                    </p>
+            <h2 className="section-title">Our Directors</h2>
+            <div className="about-image">
+                <div className="director-card">
+                    <img
+                        src="/img/owner-director-1.png"
+                        alt="Capt. C.L. Dubey"
+                        className="director-img"
+                    />
+                    <div className="director-name">Capt. C.L. Dubey</div>
                 </div>
+
+                <div className="director-card">
+                    <img
+                        src="/img/owner-director-2.png"
+                        alt="Capt. O.P. Yadav"
+                        className="director-img"
+                    />
+                    <div className="director-name">Capt. O.P. Yadav</div>
+                </div>
+            </div>
+
+
+            <div className="faculty-container">
+                <h2 className="section-title">Our Faculty</h2>
 
                 <div className="faculty-table-wrapper">
                     <table className="faculty-table">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Name</th>
-                            </tr>
-                        </thead>
+
+
                         <tbody>
-                            {facultyData.map((faculty, idx) => (
+                            {leftData.map((faculty, idx) => (
                                 <tr key={idx} className={faculty.id === '' ? 'header-row' : ''}>
                                     <td>{faculty.id}</td>
                                     <td>{faculty.name}</td>
@@ -64,6 +80,26 @@ export default function Faculty() {
                             ))}
                         </tbody>
                     </table>
+
+                    <table className="faculty-table">
+                        <tbody>
+                            {rightData.map((faculty, idx) => (
+                                <tr key={idx} className={faculty.id === '' ? 'header-row' : ''}>
+                                    <td>{faculty.id}</td>
+                                    <td>{faculty.name}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className="faculty-header">
+                    <div className="section-accent"></div>
+                    <p className="faculty-subtitle">
+                        The MMTI is proud of having one of the best faculty in Maritime Training sector. The faculties here are of diversified nature such as Master Mariners, Chief Engineer, MBBS (Doctor), H.R.D Personnel, Radio Officers & Indian Navy instructors. Most of the faculty is highly qualified well experienced in Maritime training and best in the art of sharing knowledge.
+                        <br /><br />
+                        Presently there are 3 extra masters who are teaching at MMTI Andheri (W) campus. Eg: Capt. C.L. Dubey, Capt.L.K.Panda (Visiting).
+                    </p>
                 </div>
             </div>
         </section>

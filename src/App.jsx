@@ -14,19 +14,19 @@ import Modal from './Components/Modal'
 function App() {
   return (
     <Router>
-       <Navbar />
+      <Navbar />
       <Modal />
-     
+
       <Routes>
         <Route path="/" element={
           <>
             <Hero />
             <Courses />
-             <Contact />
-              <Faculty />
+            <Contact />
             <About />
-           
-            
+            <Faculty />
+
+
           </>
         } />
         <Route path="/gallery" element={<PhotoGallery />} />

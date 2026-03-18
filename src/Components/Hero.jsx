@@ -114,7 +114,7 @@ export default function Hero() {
 
         </section>
         <section id="home" className="hero">
-            <div className="hero-background">
+            <div className="hero-background-3">
                 <img 
                     src="/img/section-3.jpg" 
                     alt="Maritime background" 

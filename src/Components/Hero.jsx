@@ -1,6 +1,7 @@
 import './Hero.css';
 import { useEffect, useState } from 'react';
-import CircularGallery from '../bits/CircularGallery'
+import CircularGallery from '../bits/CircularGallery';
+import CarouselGallery from '../bits/CarouselGallery';
 
 export default function Hero() {
     const dialogues = [
@@ -12,7 +13,19 @@ export default function Hero() {
 
     const [index, setIndex] = useState(0);
     const [visible, setVisible] = useState(true);
+    const [isMobile, setIsMobile] = useState(false);
 
+    useEffect(() => {
+        // Initial check and event listener for screen size
+        const checkScreenSize = () => {
+            setIsMobile(window.innerWidth < 1024);
+        };
+        
+        checkScreenSize();
+        window.addEventListener('resize', checkScreenSize);
+        
+        return () => window.removeEventListener('resize', checkScreenSize);
+    }, []);
     useEffect(() => {
         const interval = setInterval(() => {
             // fade out, change text, fade in
@@ -105,11 +118,15 @@ export default function Hero() {
                     
                 </div>
                 
-                <div className="circular-gallery-container">
-                  <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02}
-                
-                />
-                </div>
+                {isMobile ? (
+                    <div className="carousel-gallery-container">
+                        <CarouselGallery />
+                    </div>
+                ) : (
+                    <div className="circular-gallery-container">
+                        <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02} />
+                    </div>
+                )}
             </div>
 
         </section>

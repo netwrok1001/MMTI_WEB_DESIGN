@@ -94,7 +94,6 @@ export default function Faculty() {
                 </div>
 
                 <div className="faculty-header">
-                    <div className="section-accent"></div>
                     <p className="faculty-subtitle">
                         The MMTI is proud of having one of the best faculty in Maritime Training sector. The faculties here are of diversified nature such as Master Mariners, Chief Engineer, MBBS (Doctor), H.R.D Personnel, Radio Officers & Indian Navy instructors. Most of the faculty is highly qualified well experienced in Maritime training and best in the art of sharing knowledge.
                         <br /><br />

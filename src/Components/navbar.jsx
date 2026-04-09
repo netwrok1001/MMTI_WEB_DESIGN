@@ -4,6 +4,7 @@ import './navbar.css';
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -13,6 +14,7 @@ export default function Navbar() {
 
     const closeMenu = () => {
         setIsMenuOpen(false);
+        setIsAboutDropdownOpen(false);
     };
 
     const handleNavClick = (e, href) => {
@@ -39,13 +41,7 @@ export default function Navbar() {
     };
 
     const handleCoursesClick = (e) => {
-        // On small screens, clicking Courses should navigate to courses section directly
-        if (window.innerWidth <= 768) {
-            handleNavClick(e, '#courses');
-        } else {
-            // on desktop keep dropdown behavior
-            e.preventDefault();
-        }
+        handleNavClick(e, '#courses');
     };
 
     return (
@@ -53,8 +49,8 @@ export default function Navbar() {
             <div className="navbar-container">
                 <div className="navbar-logo">
                     <img src="/img/MMTI logo.jpg" alt="MMTI Logo" className="logo-img" />
-                   
-                    <span className="logo-text">MMTI</span>
+                
+                    <span className="logo-text">Mumbai Maritime Training Institute</span>
                     
                     
                 </div>
@@ -67,10 +63,15 @@ export default function Navbar() {
 
                 <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
                     <li className="nav-item">
-                        <Link to="/" className="nav-link" onClick={closeMenu}>Home</Link>
+                        <a href="#home" className="nav-link" onClick={(e) => handleNavClick(e, '#home')}>Home</a>
                     </li>
-                    <li className="nav-item">
-                        <a href="#about" className="nav-link" onClick={(e) => handleNavClick(e, '#about')}>About</a>
+                    <li className="nav-item dropdown">
+                        <a href="#about" className="nav-link" onClick={(e) => { e.preventDefault(); setIsAboutDropdownOpen(!isAboutDropdownOpen); }}>About</a>
+                        <ul className={`dropdown-menu ${isAboutDropdownOpen ? 'active' : ''}`}>
+                            <li><a href="#about" className="dropdown-link" onClick={(e) => { handleNavClick(e, '#about'); setIsAboutDropdownOpen(false); }}>About Us</a></li>
+                            <li><a href="#faculty" className="dropdown-link" onClick={(e) => { handleNavClick(e, '#faculty'); setIsAboutDropdownOpen(false); }}>Our Team</a></li>
+                            <li><Link to="/library" className="dropdown-link golden-glitter" onClick={() => { closeMenu(); setIsAboutDropdownOpen(false); }}>Library</Link></li>
+                        </ul>
                     </li>
                     <li className="nav-item">
                         <a href="#courses" className="nav-link" onClick={(e) => handleCoursesClick(e,'#courses')}>Courses </a>
@@ -84,9 +85,6 @@ export default function Navbar() {
                     </li>
                     <li className="nav-item">
                         <Link to="/gallery" className="nav-link" onClick={closeMenu}>Photo Gallery</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/library" className="nav-link" onClick={closeMenu}>Library</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/news" className="nav-link" onClick={closeMenu}>News</Link>

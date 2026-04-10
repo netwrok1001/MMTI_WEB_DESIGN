@@ -79,13 +79,13 @@ export default function Navbar() {
                     </li>
             
                     <li className="nav-item">
-                        <a href="#contact" className="nav-link" onClick={(e) => handleNavClick(e, '#contact')}>Contact</a>
-                    </li>
-                    <li className="nav-item">
                         <Link to="/gallery" className="nav-link" onClick={closeMenu}>Photo Gallery</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/news" className="nav-link" onClick={closeMenu}>News</Link>
+                    </li>
+                    <li className="nav-item">
+                        <a href="#contact" className="nav-link" onClick={(e) => handleNavClick(e, '#contact')}>Contact</a>
                     </li>
                     <li className="nav-item">
                         <a href="#book" className="nav-link nav-cta" onClick={(e) => handleNavClick(e, '#book')}>Book Now</a>

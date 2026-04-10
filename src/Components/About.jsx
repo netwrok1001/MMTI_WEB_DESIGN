@@ -23,24 +23,7 @@ export default function About() {
                         MMTI prides in itself in teaching you what you need to know to be a competent Sailor/ Nautical Officer / Engineer Officer. The MMTI shares a special bond with the students and each one is free to discuss their problems
                         and requirements. MMTI believes that a better communication always works towards a better flow of thoughts and maintains a healthy attitude.
                     </p>
-                    {/* <div className="about-image">
-                    <div className="director-card">
-                        <img
-                            src="/img/owner-director-1.png"
-                            alt="Capt. C.L. Dubey"
-                            className="director-img"
-                        />
-                        <div className="director-name">Capt. C.L. Dubey</div>
-                    </div>
-
-                    <div className="director-card">
-                        <img
-                            src="/img/owner-director-2.png"
-                            alt="Capt. O.P. Yadav"
-                            className="director-img"
-                        />
-                        <div className="director-name">Capt. O.P. Yadav</div>
-                    </div> */}
+                
                 </div>
 
                 <div className="about-grid">
@@ -77,6 +60,28 @@ export default function About() {
                         We aim to achieve this by explicitly complying with the STCW Convention as amended and all related National Legislation.
                     </p>
                 </div>
+                <section id="faculty" className="faculty">
+            <h2 className="section-title">Our Directors</h2>
+            <div className="about-image">
+                <div className="director-card">
+                    <img
+                        src="/img/owner-director-1.png"
+                        alt="Capt. C.L. Dubey"
+                        className="director-img"
+                    />
+                    <div className="director-name">Capt. C.L. Dubey</div>
+                </div>
+
+                <div className="director-card">
+                    <img
+                        src="/img/owner-director-2.png"
+                        alt="Capt. O.P. Yadav"
+                        className="director-img"
+                    />
+                    <div className="director-name">Capt. O.P. Yadav</div>
+                </div>
+            </div>
+            </section>
             </div>
         </section >
     );

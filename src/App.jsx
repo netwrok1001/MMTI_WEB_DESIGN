@@ -4,7 +4,7 @@ import Navbar from './Components/navbar'
 import Hero from './Components/Hero'
 import About from './Components/About'
 import Courses from './Components/Courses'
-import Faculty from './Components/Faculty'
+import Faculty from './pages/Faculty'
 import Contact from './Components/Contact'
 import PhotoGallery from './pages/Photo_gallery'
 import Library from './pages/Library'
@@ -22,16 +22,18 @@ function App() {
           <>
             <Hero />
             <Courses />
-            <Contact />
             <About />
-            <Faculty />
+            <Contact />
+            
+            
 
 
           </>
         } />
         <Route path="/gallery" element={<PhotoGallery />} />
         <Route path="/library" element={<Library />} />
-        <Route path="/news" element={<News />} />
+        <Route path="/news" element={<News/>} />
+        <Route path="/faculty" element={<Faculty />} />
       </Routes>
     </Router>
   )

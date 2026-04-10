@@ -41,7 +41,7 @@ export default function Faculty() {
     const rightData = facultyData.slice(mid);
 
     return (
-        <section id="faculty" className="faculty">
+            <section id="faculty" className="faculty">
             <h2 className="section-title">Our Directors</h2>
             <div className="about-image">
                 <div className="director-card">
@@ -62,8 +62,6 @@ export default function Faculty() {
                     <div className="director-name">Capt. O.P. Yadav</div>
                 </div>
             </div>
-
-
             <div className="faculty-container">
                 <h2 className="section-title">Our Faculty</h2>
 

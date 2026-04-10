@@ -69,7 +69,7 @@ export default function Navbar() {
                         <a href="#about" className="nav-link" onClick={(e) => { e.preventDefault(); setIsAboutDropdownOpen(!isAboutDropdownOpen); }}>About</a>
                         <ul className={`dropdown-menu ${isAboutDropdownOpen ? 'active' : ''}`}>
                             <li><a href="#about" className="dropdown-link" onClick={(e) => { handleNavClick(e, '#about'); setIsAboutDropdownOpen(false); }}>About Us</a></li>
-                            <li><a href="#faculty" className="dropdown-link" onClick={(e) => { handleNavClick(e, '#faculty'); setIsAboutDropdownOpen(false); }}>Our Team</a></li>
+                            <li><Link to="/faculty" className="dropdown-link" onClick={() => { closeMenu(); setIsAboutDropdownOpen(false); }}>Our Team </Link></li>
                             <li><Link to="/library" className="dropdown-link golden-glitter" onClick={() => { closeMenu(); setIsAboutDropdownOpen(false); }}>Library</Link></li>
                         </ul>
                     </li>
@@ -77,9 +77,7 @@ export default function Navbar() {
                         <a href="#courses" className="nav-link" onClick={(e) => handleCoursesClick(e,'#courses')}>Courses </a>
                         
                     </li>
-                    <li className="nav-item">
-                        <a href="#faculty" className="nav-link" onClick={(e) => handleNavClick(e, '#faculty')}>Faculty</a>
-                    </li>
+            
                     <li className="nav-item">
                         <a href="#contact" className="nav-link" onClick={(e) => handleNavClick(e, '#contact')}>Contact</a>
                     </li>

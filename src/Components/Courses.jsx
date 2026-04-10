@@ -135,7 +135,7 @@ export default function Courses() {
                 <div className="courses-notice">
                     
 
-                    <div className="notice-block">
+                    <div className="notice-block-1">
                         <p className="notice-line">📌 <strong>Certificate Charges Update (Effective 01/02/2025):</strong></p>
                         <p className="notice-text">Certificates generated from the DG Shipping Portal will incur additional charges:</p>
                         <ol>
@@ -145,13 +145,13 @@ export default function Courses() {
                         </ol>
                         
                     </div>
-                    <div className="notice-block">
+                    <div className="notice-block-2">
                         <p className="notice-line">💳 <strong>Course Booking Payment Policy:</strong></p>
                         <p className="notice-text">Internet handling charges apply when booking courses via our website using the payment gateway.</p>
                         <p className="notice-text">No extra charges if payment is made directly to MMTI via debit/credit card or cheque.</p>
                     </div>
                         
-                    <div className="notice-block">
+                    <div className="notice-block-3">
                         <p className="notice-line">👔 <strong>Dress Code Guidelines:</strong></p>
                         <p className="notice-text">This policy ensures a professional environment within the institution. Please adhere to the following:</p>
                         <ul className="notice-list">
@@ -161,7 +161,7 @@ export default function Courses() {
                         </ul>
                     </div>
                     
-                    <div className="notice-block">
+                    <div className="notice-block-4">
                         <p className="notice-line">📱 <strong>General Conduct & Safety:</strong></p>
                         <ul className="notice-list">
                             <li>Mobiles must be kept in bags and not used during classes.</li>

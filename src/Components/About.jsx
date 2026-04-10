@@ -1,4 +1,5 @@
 import './About.css';
+import { Link } from 'react-router-dom';
 
 export default function About() {
     return (
@@ -80,6 +81,11 @@ export default function About() {
                     />
                     <div className="director-name">Capt. O.P. Yadav</div>
                 </div>
+            </div>
+            <div className="team-button-container">
+                <Link to="/faculty">
+                    <button className="cta-btn">View our Team  </button>
+                </Link>
             </div>
             </section>
             </div>

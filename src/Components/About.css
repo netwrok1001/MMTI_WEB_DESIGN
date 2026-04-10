@@ -34,7 +34,9 @@
     width: 100%;
 }
 
-
+.team-button-container{
+    margin-top: 25px;
+}
 
 .director-card {
     width: 100%;

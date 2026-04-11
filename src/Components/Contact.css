@@ -230,6 +230,33 @@
     border-color: #00d4ff;
 }
 
+.contact-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.feedback-btn {
+    background: transparent;
+    color: #00d4ff;
+    border: 1px solid #00d4ff;
+    border-radius: 25px;
+    padding: 0.8rem 1.4rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px rgba(0, 212, 255, 0.2);
+}
+
+.feedback-btn:hover {
+    background: rgba(0, 212, 255, 0.12);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 0 18px rgba(0, 212, 255, 0.4);
+}
+
 /* Map Placeholder */
 .map-placeholder {
     width: 100%;

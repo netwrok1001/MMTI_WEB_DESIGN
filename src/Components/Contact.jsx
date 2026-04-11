@@ -50,7 +50,7 @@ export default function Contact() {
                             </p>
 
                             <div className="contact-links">
-                                {/* Contact details moved to the dialogue box below */}
+                                <button type="button" className="feedback-btn">Feedback</button>
                             </div>
                         </div>
 

@@ -119,11 +119,14 @@
 .nav-cta:hover {
     transform: translateY(-2px) scale(1.05);
     box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
-    color: #e7ebff !important;
-    background: linear-gradient(135deg, #00d4ff, #0084ff) ;
-    
+    color: #0f2c5f !important;
 }
 
+.nav-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+    color: #0f2c5f !important;
+}
 
 .nav-cta::after {
     display: none;
@@ -170,7 +173,7 @@
     font-weight: 500;
     font-size: 0.9rem;
     letter-spacing: 0.3px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier   (0.4, 0, 0.2, 1);
     border-radius: 6px;
     margin: 0 0.5rem;
     position: relative;
@@ -373,7 +376,6 @@
     .nav-cta:hover {
         transform: translateY(-2px) scale(1.02);
         box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
-
     }
 
     .logo-text {

@@ -1,4 +1,5 @@
  
+import Footer from '../Components/Footer';
 import './Photo_gallery.css';
 
 export default function PhotoGallery() {
@@ -62,9 +63,8 @@ export default function PhotoGallery() {
                         </div>
                     ))}
                 </div>
-
-             
             </div>
+            <Footer />
         </section>
     );
 }

@@ -1,3 +1,4 @@
+import Footer from '../Components/Footer';
 import './Faculty.css';
 
 export default function Faculty() {
@@ -99,6 +100,7 @@ export default function Faculty() {
                     </p>
                 </div>
             </div>
+            <Footer />
         </section>
     );
 }

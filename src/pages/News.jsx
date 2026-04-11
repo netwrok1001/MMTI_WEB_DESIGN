@@ -1,3 +1,4 @@
+import Footer from '../Components/Footer';
 import './News.css';
 import { useState } from 'react';
 
@@ -336,6 +337,7 @@ export default function News() {
                     )}
                 </div>
             </div>
+            <Footer />
         </section>
     );
 }

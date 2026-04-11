@@ -1,0 +1,306 @@
+/* Dialogue Box */
+.dialogue-box {
+    width: 100%;
+    max-width: 900px;
+    min-height: 200px;
+    background: rgba(0, 0, 0, 0.754);
+    border: 1px solid rgba(255, 255, 255, 0.539);
+    border-radius: 20px;
+    margin: 2rem auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.dialogue-content {
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.dialogue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+}
+
+.dialogue-item {
+    color: #fff;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.dialogue-item strong {
+    color: #00d4ff;
+    display: block;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.dialogue-item a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    word-break: break-word;
+}
+
+.dialogue-item a:hover {
+    color: #00d4ff;
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer {
+    width: 100%;
+    background-color: transparent;
+    padding: 3rem 2rem 2rem;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+}
+
+.partner-logo img {
+    height: 40px;
+    margin-top: 1rem;
+    opacity: 0.8;
+    max-width: 100%;
+}
+
+/* Responsive Design - Large Desktop */
+@media (min-width: 1200px) {
+    .dialogue-box {
+        max-width: 900px;
+        padding: 2rem;
+    }
+
+    .dialogue-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Responsive Design - Tablets */
+@media (max-width: 1024px) {
+    .dialogue-box {
+        max-width: 85%;
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+    }
+
+    .dialogue-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.2rem;
+    }
+
+    .dialogue-item {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive Design - iPad/Large Mobile */
+@media (max-width: 768px) {
+    .dialogue-box {
+        max-width: 90%;
+        padding: 1.2rem;
+        margin: 1.5rem auto;
+        min-height: auto;
+    }
+
+    .dialogue-content {
+        max-height: none;
+    }
+
+    .dialogue-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .dialogue-item {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .dialogue-item strong {
+        font-size: 0.8rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .footer {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.85rem;
+    }
+}
+
+/* Responsive Design - Mobile Portrait */
+@media (max-width: 600px) {
+    .dialogue-box {
+        max-width: 95%;
+        padding: 1rem;
+        margin: 1rem auto;
+        min-height: auto;
+        border-radius: 15px;
+    }
+
+    .dialogue-content {
+        max-height: none;
+    }
+
+    .dialogue-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .dialogue-item {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .dialogue-item strong {
+        font-size: 0.75rem;
+        margin-bottom: 0.15rem;
+    }
+
+    .dialogue-item a {
+        font-size: 0.8rem;
+        display: block;
+        margin: 0.1rem 0;
+    }
+
+    .footer {
+        padding: 1.5rem 1rem 1rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+        padding-top: 1rem;
+    }
+
+    .partner-logo img {
+        height: 35px;
+        margin-top: 0.8rem;
+    }
+}
+
+/* Responsive Design - Small Mobile */
+@media (max-width: 480px) {
+    .dialogue-box {
+        width: calc(100% - 1rem);
+        max-width: none;
+        padding: 0.8rem;
+        margin: 1rem auto;
+        min-height: auto;
+        border-radius: 12px;
+    }
+
+    .dialogue-content {
+        max-height: none;
+    }
+
+    .dialogue-grid {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+    }
+
+    .dialogue-item {
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
+
+    .dialogue-item strong {
+        font-size: 0.7rem;
+        margin-bottom: 0.1rem;
+    }
+
+    .dialogue-item a {
+        font-size: 0.74rem;
+        display: block;
+        margin: 0.08rem 0;
+    }
+
+    .footer {
+        padding: 1rem 0.8rem 0.8rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.75rem;
+        padding-top: 0.8rem;
+    }
+
+    .partner-logo img {
+        height: 30px;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Responsive Design - Extra Small Mobile */
+@media (max-width: 380px) {
+    .dialogue-box {
+        width: calc(100% - 0.8rem);
+        padding: 0.6rem;
+        margin: 0.8rem auto;
+        border-radius: 10px;
+    }
+
+    .dialogue-grid {
+        gap: 0.5rem;
+    }
+
+    .dialogue-item {
+        font-size: 0.7rem;
+        line-height: 1.2;
+    }
+
+    .dialogue-item strong {
+        font-size: 0.65rem;
+        margin-bottom: 0.08rem;
+    }
+
+    .dialogue-item a {
+        font-size: 0.68rem;
+    }
+
+    .footer {
+        padding: 0.8rem 0.6rem 0.6rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.7rem;
+        padding-top: 0.6rem;
+    }
+
+    .partner-logo img {
+        height: 25px;
+        margin-top: 0.4rem;
+    }
+}

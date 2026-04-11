@@ -1,3 +1,4 @@
+import Footer from '../Components/Footer';
 import './Library.css';
 import { useState } from 'react';
 
@@ -170,6 +171,7 @@ export default function Library() {
                     <p>Total Resources: {filteredItems.length} | Showing: {activeCategory}</p>
                 </div>
             </div>
+            <Footer />
         </section>
     );
 }

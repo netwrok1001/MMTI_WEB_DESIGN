@@ -52,7 +52,16 @@ export default function About() {
                         <p>Our certifications are recognized globally, opening doors to international maritime careers.</p>
                     </div>
                 </div>
-
+                <div className="alumni-network">
+                <div className="alumni-image-holder">
+                    <div className="alumni-image-blank">Alumni Image</div>
+                </div>
+                <div className="alumni-action">
+                    <h3>Alumni Network</h3>
+                    <p>Connect with the MMTI alumni community and explore success stories from past students.</p>
+                    <Link to="/alumini" className="alumni-btn">Visit Alumni Network</Link>
+                </div>
+            </div>
                 <div className="quality-policy">
                     <h3>Quality Po(ISO CL. 5.2.1)</h3>
                     <p>
@@ -62,6 +71,7 @@ export default function About() {
                     </p>
                 </div>
                 <section id="faculty" className="faculty">
+                    
             <h2 className="section-title">Our Directors</h2>
             <div className="about-image">
                 <div className="director-card">

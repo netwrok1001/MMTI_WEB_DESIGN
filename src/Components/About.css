@@ -148,6 +148,95 @@
     font-weight: 700;
 }
 
+.alumni-network {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.8rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 2px solid transparent;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.alumni-network:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 212, 255, 0.15);
+    border-color: #00d4ff;
+}
+
+.alumni-image-holder {
+    flex: 1 1 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alumni-image-blank {
+    width: 100%;
+    max-width: 200px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgba(0, 212, 255, 0.45);
+    border-radius: 12px;
+    background: rgba(0, 212, 255, 0.05);
+    color: #0f2c5f;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.alumni-action {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.alumni-action h3 {
+    margin: 0;
+    color: #0f2c5f;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.alumni-action p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.alumni-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.4rem;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #00d4ff, #0084ff);
+    color: #08203f;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.alumni-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.25);
+}
+
 .quality-policy p {
     color: #333;
     line-height: 1.8;
@@ -246,6 +335,43 @@
 
     .about-img {
         max-height: 180px;
+    }
+
+    .alumni-network {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        max-width: none;
+    }
+
+    .alumni-image-holder,
+    .alumni-action {
+        width: 100%;
+        flex: none;
+    }
+
+    .alumni-action {
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .alumni-image-blank {
+        height: 150px;
+        max-width: 250px;
+        font-size: 0.8rem;
+    }
+
+    .alumni-action h3 {
+        font-size: 1.1rem;
+    }
+
+    .alumni-action p {
+        font-size: 0.9rem;
+    }
+
+    .alumni-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
     }
 }
 

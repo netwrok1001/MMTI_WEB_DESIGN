@@ -1,0 +1,51 @@
+.feedback-page {
+    min-height: 100vh;
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(2, 19, 38, 0.9));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-container {
+    max-width: 760px;
+    width: 100%;
+    background: rgba(4, 15, 29, 0.94);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    box-shadow: 0 0 40px rgba(0, 212, 255, 0.16);
+    border-radius: 28px;
+    padding: 3rem;
+    text-align: center;
+}
+
+.feedback-container h2 {
+    font-size: 2.8rem;
+    color: #00d4ff;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.feedback-placeholder {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #d7e9ff;
+    margin-bottom: 2rem;
+}
+
+.feedback-back-link {
+    display: inline-block;
+    padding: 0.95rem 1.8rem;
+    border-radius: 999px;
+    border: 1px solid #00d4ff;
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.25s ease;
+}
+
+.feedback-back-link:hover {
+    background: #00d4ff;
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Contact.css';
 import Footer from './Footer';
 
@@ -14,18 +15,15 @@ export default function Contact() {
                     <div className="contact-form-column">
                         <form className="contact-form">
                             <div className="form-group">
-                                <label htmlFor="name">Name</label>
-                                <input type="text" id="name" className="form-input" />
+                                <input type="text" id="name" className="form-input" placeholder='Name'/>
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="email">E-mail</label>
-                                <input type="email" id="email" className="form-input" />
+                                <input type="email" id="email" className="form-input" placeholder='E-mail'/>
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="contact">Contact No.</label>
-                                <input type="tel" id="contact" className="form-input" />
+                                <input type="tel" id="contact" className="form-input"placeholder='Contact No.' />
                             </div>
 
                             <div className="form-checkbox">
@@ -50,7 +48,7 @@ export default function Contact() {
                             </p>
 
                             <div className="contact-links">
-                                <button type="button" className="feedback-btn">Feedback</button>
+                                <Link to="/feedback" className="feedback-btn">Feedback</Link>
                             </div>
                         </div>
 

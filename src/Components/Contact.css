@@ -238,12 +238,15 @@
 }
 
 .feedback-btn {
-    background: transparent;
+    blur:50%;
+    opacity: 100%;
     color: #00d4ff;
     border: 1px solid #00d4ff;
     border-radius: 25px;
-    padding: 0.8rem 1.4rem;
-    font-size: 0.95rem;
+    padding:1rem;
+    justify-content: center;
+    align-content: center;
+    font-size: auto;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -287,6 +290,12 @@
         opacity: 0.5;
     }
 }
+/* Standard syntax for modern browsers */
+input::placeholder {
+  opacity: .8; /* Range is 0 (transparent) to 1 (fully opaque) */
+  color: #fffcfc; /* Optional: adjust color to make it darker */
+}
+
 
 /* Responsive Design */
 @media (max-width: 968px) {

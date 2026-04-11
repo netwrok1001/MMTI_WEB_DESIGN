@@ -9,6 +9,8 @@ import Contact from './Components/Contact'
 import PhotoGallery from './pages/Photo_gallery'
 import Library from './pages/Library'
 import News from './pages/News'
+import Feedback from './pages/Feedback'
+import Alumini from './pages/Alumini'
 import Modal from './Components/Modal'
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
         <Route path="/library" element={<Library />} />
         <Route path="/news" element={<News/>} />
         <Route path="/faculty" element={<Faculty />} />
+        <Route path="/feedback" element={<Feedback />} />
+        <Route path="/alumini" element={<Alumini />} />
       </Routes>
     </Router>
   )

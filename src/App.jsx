@@ -25,9 +25,6 @@ function App() {
             <About />
             <Contact />
             
-            
-
-
           </>
         } />
         <Route path="/gallery" element={<PhotoGallery />} />

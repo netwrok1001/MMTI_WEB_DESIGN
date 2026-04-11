@@ -84,7 +84,7 @@ export default function About() {
             </div>
             <div className="team-button-container">
                 <Link to="/faculty">
-                    <button className="cta-btn">View our Team  </button>
+                    <button className="cta-btn">View our Team</button>
                 </Link>
             </div>
             </section>

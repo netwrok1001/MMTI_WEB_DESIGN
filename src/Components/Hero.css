@@ -151,9 +151,10 @@
     border-radius: 50px;
     text-decoration: none;
     transition: all 0.3s ease;
-    border: 2px solid transparent;
+    border: 2px solid rgba(242, 253, 255, 0.649);
     display: inline-block;
     text-align: center;
+    justify-content: center;
     cursor: pointer;
 }
 
@@ -261,14 +262,15 @@
 }
 
 .stat-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20%);
-    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 2rem;
-    border-radius: 15px;
+    border-radius: 20px;
     text-align: center;
+    justify-content: center;
     color: #fff;
     transition: all 0.3s ease;
+    box-shadow: 0 0 5px #fff, 0 0 15px #d2d4d4;
 }
 
 .stat-card:hover {
@@ -309,15 +311,15 @@
     padding: clamp(1rem, 4vw, 1.5rem);
     background: linear-gradient(
         135deg,
-        rgba(0, 212, 255, 0.1) 0%,
-        rgba(0, 132, 255, 0.05) 100%
+        rgba(0, 0, 0, 0.491) 0%,
+        rgba(0, 14, 28, 0.396) 100%
     );
-    border: 1.5px solid rgba(0, 212, 255, 0.3);
-    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.446);
+    border-radius: 30px;
     backdrop-filter: blur(20px);
     box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.2),
-        0 0 20px rgba(0, 212, 255, 0.15);
+        0 8px 20px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(0, 0, 0, 0);
     transition: all 0.3s ease;
 }
 
@@ -404,7 +406,7 @@
 .ad-card-features {
     list-style: none;
     padding: 0;
-    margin: 0 0 clamp(1rem, 2vw, 1.3rem) 0;
+    margin: 0 0 clamp(1rem, 2vw, 2.3rem) 0;
     position: relative;
     z-index: 1;
 }
@@ -429,7 +431,7 @@
     display: inline-block;
     padding: clamp(0.6rem, 1.5vw, 0.8rem) clamp(1.2rem, 3vw, 1.8rem);
     background: linear-gradient(135deg, #00d4ff, #0084ff);
-    color: #0f2c5f;
+    color: #08104d;
     text-decoration: none;
     border-radius: 25px;
     font-weight: 600;
@@ -446,6 +448,7 @@
     transform: translateX(5px);
     box-shadow: 0 6px 25px rgba(0, 212, 255, 0.5);
     background: linear-gradient(135deg, #00e4ff, #0094ff);
+    color: #e7ebff !important;
 }
 
 /* Responsive Design */

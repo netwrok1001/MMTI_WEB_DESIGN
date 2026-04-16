@@ -235,6 +235,7 @@
 .alumni-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 212, 255, 0.25);
+    color: #ededed;
 }
 
 .quality-policy p {

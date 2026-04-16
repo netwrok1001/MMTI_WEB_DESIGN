@@ -76,12 +76,12 @@
     position: relative;
     padding: 0.5rem 0.25rem;
     border-radius: 6px;
+    display: inline-block;
 }
 
 .nav-link:hover {
     color: #00d4ff;
-    background: rgba(0, 212, 255, 0.1);
-    transform: translateY(-1px);
+    transform: translateY(-3px);
 }
 
 .nav-link::after {
@@ -117,15 +117,10 @@
 }
 
 .nav-cta:hover {
-    transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
-    color: #0f2c5f !important;
-}
-
-.nav-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
-    color: #0f2c5f !important;
+    transform: translateX(2px);
+    color: #dfdfdf !important;
+    text-shadow: 0.5px 1.5px 2px #000;
+    box-shadow: 2px 2px 10px #9db2c5c6;
 }
 
 .nav-cta::after {

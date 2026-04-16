@@ -171,7 +171,8 @@
 .send-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 0 25px rgba(0, 212, 255, 0.6);
-    background: #33e0ff;
+    background: #25cfed;
+    color: #e7e7e7;
 }
 
 /* Right Column - Info */
@@ -218,11 +219,13 @@
 }
 
 .contact-links a {
-    color: #fff;
+    color: #b6fffd;
     text-decoration: none;
     transition: color 0.3s ease;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    padding-bottom: 2px;
+    border: 1px solid rgb(49, 176, 226);
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-links a:hover {
@@ -232,13 +235,12 @@
 
 .contact-links {
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
 .feedback-btn {
-    blur:50%;
     opacity: 100%;
     color: #00d4ff;
     border: 1px solid #00d4ff;

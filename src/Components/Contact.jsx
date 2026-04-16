@@ -34,7 +34,7 @@ export default function Contact() {
                                 </label>
                             </div>
 
-                            <button type="submit" className="send-btn">SEND</button>
+                            <button type="submit" className="send-btn">SUBMIT</button>
                         </form>
                     </div>
 
@@ -52,12 +52,6 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <div className="map-placeholder">
-                            {/* Placeholder for the ship icon aesthetic */}
-                            <div className="world-map-graphic">
-                                🚢
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -42,7 +42,7 @@ export default function Faculty() {
     const rightData = facultyData.slice(mid);
 
     return (
-            <section id="faculty" className="faculty">
+        <section id="faculty" className="faculty">
             <h2 className="section-title">Our Directors</h2>
             <div className="about-image">
                 <div className="director-card">
@@ -74,6 +74,7 @@ export default function Faculty() {
                             {leftData.map((faculty, idx) => (
                                 <tr key={idx} className={faculty.id === '' ? 'header-row' : ''}>
                                     <td>{faculty.id}</td>
+                                    <td><img className='faculty-img' src="/img/empty_profile.png" alt="Faculty photo" /></td>
                                     <td>{faculty.name}</td>
                                 </tr>
                             ))}
@@ -85,6 +86,7 @@ export default function Faculty() {
                             {rightData.map((faculty, idx) => (
                                 <tr key={idx} className={faculty.id === '' ? 'header-row' : ''}>
                                     <td>{faculty.id}</td>
+                                    <td><img className='faculty-img' src="/img/empty_profile.png" alt="Faculty photo" /></td>
                                     <td>{faculty.name}</td>
                                 </tr>
                             ))}

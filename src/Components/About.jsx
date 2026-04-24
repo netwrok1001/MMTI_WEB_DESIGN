@@ -10,21 +10,26 @@ export default function About() {
                     <div className="section-accent"></div>
 
                     <p className="about-text">
-                        The Mumbai Maritime Training Institute has a commitment to quality training. The Institute is ISO 9001:2015 Quality certified by DNV.
-                        All the courses offered at MMTI are approved by DG Shipping. MMTI has been graded by DNV as A1 (outstanding) Institute.
-                        The strength of each class is limited to facilitate individual attention. You can discuss your individual needs, problems and requirements with the Institute and the faculty for the competency courses.
-                        Even after your exams, you are always welcome to approach us for any guidance.MMTI is also selected as preferred institute by FOSMA- MASSA for competency & modular courses
-                        <br /><br />
+                        The Mumbai Maritime Training Institute has a commitment to quality training. The Institute is ISO 9001:2015 Quality certified by DNV. All the courses offered at MMTI are approved by DG Shipping. MMTI has been graded by DNV as A1 (outstanding) Institute. The strength of each class is limited to facilitate individual attention. You can discuss your individual needs, problems and requirements with the Institute and the faculty for the competency courses. Even after your exams, you are always welcome to approach us for any guidance.
+                        MMTI is also selected as preferred institute by FOSMA- MASSA for competency & modular courses Several “Best Training Institute” and “Best Student” awards are testimony to this fact.
+                        Located in the heart of Mumbai at Andheri, we are close to Andheri Railway Station, a couple of hundred meters to two Metro lines and are also serviced by several bus routes & taxi services and easily accessible from Airport.
 
-                        The MMTI is headed by Capt. C. L. Dubey, B.Sc. Extra Master as Director & Owner and Capt. O. P. Yadav, Master F.G. as Director & Owner. Capt. Dubey has a vast teaching experience of about 6 years in LBS Nautical
-                        College and about 25 years in MMTI. One word guidance is being given by Capt. T. K. Joseph, Extra Master, Ex Principal LBS CAMSAR, Dr. Capt. Sudhir Kumar is Ph.D. from Mumbai University, an extra master, served
-                        mostly with maritime administrate & retired as principal officer MMD,Mumbai and Capt. L. K. Panda, Ex. Nautical Advisor – D.G.Shipping Govt. of India.
                         <br /><br />
+                        <h3>The MMTI is run professionally and promoted by </h3>
+                        <p className='owner-info'>
+                            <b>Capt. C. L. Dubey</b>, Director & Owner is a science graduate, Master Mariner, and Extra Master with over 20 years of sailing experience and 34 years as a maritime trainer. He has served as a paper setter, moderator, and examiner at Mumbai University, as well as a paper setter and examiner for the Directorate General of Shipping, Government of India. He has also been a fellow and warden of The Company of Master Mariners of India (CMMI). Capt. Dubey represented India as part of the delegation at the “Human Element, Training and Watchkeeping” Ninth Session (HTW9) meeting at IMO London in February 2023 and also participated in HTW 10 and HTW 11 as an online attendee. He is the author of several maritime textbooks used by students in India and abroad and was appointed as a “Competent Person” by IMO in February 2024.
+                        </p>
 
-                        MMTI prides in itself in teaching you what you need to know to be a competent Sailor/ Nautical Officer / Engineer Officer. The MMTI shares a special bond with the students and each one is free to discuss their problems
-                        and requirements. MMTI believes that a better communication always works towards a better flow of thoughts and maintains a healthy attitude.
+                        <p className='owner-info'>
+                            <b>Capt. O. P. Yadav</b>, Director & Owner, is a Master Mariner with 26 years of sailing experience and 28 years as a maritime trainer. He serves on the panel for oral examinations conducted by the Directorate General of Shipping, Government of India, and has been a member of The Company of Master Mariners of India (CMMI).</p>
+
+                        <p className='owner-info'>
+                            <b>Capt. F. X. Coutinho</b>, Principal, is a Master Mariner with 12 years of sailing experience and 22 years of experience as a maritime trainer. He is part of the oral examination panel for the Directorate General of Shipping, Government of India, and also serves on the paper correction panel within the same organization.</p>
+
+                        <p className='owner-info'>
+                            <b>Capt. M. R. Martins</b>, Vice-Principal, is a Master Mariner with 10 years of sailing experience and 12 years of experience as a maritime trainer. He is also a member of the oral examination panel for the Directorate General of Shipping, Government of India, and is part of the paper correction group in D.G. Shipping
+                        </p>
                     </p>
-                
                 </div>
 
                 <div className="about-grid">
@@ -53,15 +58,15 @@ export default function About() {
                     </div>
                 </div>
                 <div className="alumni-network">
-                <div className="alumni-image-holder">
-                    <div className="alumni-image-blank">Alumni Image</div>
+                    <div className="alumni-image-holder">
+                        <div className="alumni-image-blank">Alumni Image</div>
+                    </div>
+                    <div className="alumni-action">
+                        <h3>Alumni Network</h3>
+                        <p>Connect with the MMTI alumni community and explore success stories from past students.</p>
+                        <Link to="/alumini" className="alumni-btn">Visit Alumni Network</Link>
+                    </div>
                 </div>
-                <div className="alumni-action">
-                    <h3>Alumni Network</h3>
-                    <p>Connect with the MMTI alumni community and explore success stories from past students.</p>
-                    <Link to="/alumini" className="alumni-btn">Visit Alumni Network</Link>
-                </div>
-            </div>
                 <div className="quality-policy">
                     <h3>Quality Po(ISO CL. 5.2.1)</h3>
                     <p>
@@ -71,33 +76,33 @@ export default function About() {
                     </p>
                 </div>
                 <section id="faculty" className="faculty">
-                    
-            <h2 className="section-title">Our Directors</h2>
-            <div className="about-image">
-                <div className="director-card">
-                    <img
-                        src="/img/owner-director-1.png"
-                        alt="Capt. C.L. Dubey"
-                        className="director-img"
-                    />
-                    <div className="director-name">Capt. C.L. Dubey</div>
-                </div>
 
-                <div className="director-card">
-                    <img
-                        src="/img/owner-director-2.png"
-                        alt="Capt. O.P. Yadav"
-                        className="director-img"
-                    />
-                    <div className="director-name">Capt. O.P. Yadav</div>
-                </div>
-            </div>
-            <div className="team-button-container">
-                <Link to="/faculty">
-                    <button className="cta-btn">View our Team</button>
-                </Link>
-            </div>
-            </section>
+                    <h2 className="section-title">Our Directors</h2>
+                    <div className="about-image">
+                        <div className="director-card">
+                            <img
+                                src="/img/owner-director-1.png"
+                                alt="Capt. C.L. Dubey"
+                                className="director-img"
+                            />
+                            <div className="director-name">Capt. C.L. Dubey</div>
+                        </div>
+
+                        <div className="director-card">
+                            <img
+                                src="/img/owner-director-2.png"
+                                alt="Capt. O.P. Yadav"
+                                className="director-img"
+                            />
+                            <div className="director-name">Capt. O.P. Yadav</div>
+                        </div>
+                    </div>
+                    <div className="team-button-container">
+                        <Link to="/faculty">
+                            <button className="cta-btn">View our Team</button>
+                        </Link>
+                    </div>
+                </section>
             </div>
         </section >
     );

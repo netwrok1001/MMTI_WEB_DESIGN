@@ -83,9 +83,16 @@ export default function Hero() {
 
 
                     <div className="hero-logos">
-                        <img src="/img/Picture2.png" alt="Picture 2" className="logo" />
-                        <img src="/img/DNVLogo.jpg" alt="DNV Logo" className="logo" />
-                        <img src="/img/MMTI logo.jpg" alt="MMTI Logo" className="logo" />
+
+                            {/* <img src="/img/D.G.SHIPPING.jpg" alt="D.G.Shipping" className="logo" /> */}
+                            <img src="/img/DNVLogo.jpg" alt="DNV Logo" className="logo" />
+                            <img src="/img/MCA UK.png" alt="MCA Logo" className="logo" />
+
+
+                            <img src="/img/MMTI logo.jpg" alt="MMTI Logo" className="logo" />
+                            <img src="/img/ASS.MEMBER OF FOSMA.jpg" alt="Fosma" className="logo" />
+                            <img src="/img/MMTI LLP LOGO - Final.jpg" alt="MMTI LLP" className="logo" />
+
                     </div>
 
                     <div className='advertisement-section'>

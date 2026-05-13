@@ -12,6 +12,7 @@ import News from './pages/News'
 import Feedback from './pages/Feedback'
 import Alumini from './pages/Alumini'
 import Modal from './Components/Modal'
+import Enroll from './pages/Enroll'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/faculty" element={<Faculty />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/alumini" element={<Alumini />} />
+        <Route path="/enroll" element={<Enroll />} />
       </Routes>
     </Router>
   )

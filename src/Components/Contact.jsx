@@ -15,15 +15,15 @@ export default function Contact() {
                     <div className="contact-form-column">
                         <form className="contact-form">
                             <div className="form-group">
-                                <input type="text" id="name" className="form-input" placeholder='Name'/>
+                                <input type="text" id="name" className="form-input" placeholder='Name' />
                             </div>
 
                             <div className="form-group">
-                                <input type="email" id="email" className="form-input" placeholder='E-mail'/>
+                                <input type="email" id="email" className="form-input" placeholder='E-mail' />
                             </div>
 
                             <div className="form-group">
-                                <input type="tel" id="contact" className="form-input"placeholder='Contact No.' />
+                                <input type="tel" id="contact" className="form-input" placeholder='Contact No.' />
                             </div>
 
                             <div className="form-checkbox">

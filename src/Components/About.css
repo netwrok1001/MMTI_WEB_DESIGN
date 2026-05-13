@@ -131,6 +131,10 @@
     margin-bottom: 0.8rem;
     font-weight: 700;
 }
+.heading {
+    font-size: larger;
+    font-weight: 600;
+}
 
 .about-card p {
     color: #666;

@@ -87,9 +87,25 @@ export default function Courses() {
     "Refresher's Courses",
     "Competency Courses",
     "Simulator Courses",
-    "Value addition courses",
-    "UK – MCA approved courses",
   ];
+
+  const handleFilterClick = (filter) => {
+    const urlMap = {
+      "Modular Courses": 1,
+      "Package Courses": 4,
+      "Refresher's Courses": 5,
+      "Competency Courses": 6,
+      "Simulator Courses": 7,
+    };
+
+    if (filter === "All") {
+      setActiveFilter(filter);
+    } else if (urlMap[filter]) {
+      window.location.href = `http://mmti.co.in/courses.aspx?Id=${urlMap[filter]}`;
+    } else {
+      setActiveFilter(filter);
+    }
+  };
 
   const filteredCourses =
     activeFilter === "All"
@@ -116,7 +132,7 @@ export default function Courses() {
               <button
                 key={filter}
                 className={`filter-btn ${activeFilter === filter ? "active" : ""}`}
-                onClick={() => setActiveFilter(filter)}
+                onClick={() => handleFilterClick(filter)}
               >
                 {filter}
               </button>

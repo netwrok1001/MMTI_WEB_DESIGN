@@ -9,13 +9,13 @@ export default function About() {
                     <h2 className="section-title">About MMTI</h2>
                     <div className="section-accent"></div>
 
-                    <p className="about-text">
+                    <div className="about-text">
                         The Mumbai Maritime Training Institute has a commitment to quality training. The Institute is ISO 9001:2015 Quality certified by DNV. All the courses offered at MMTI are approved by DG Shipping. MMTI has been graded by DNV as A1 (outstanding) Institute. The strength of each class is limited to facilitate individual attention. You can discuss your individual needs, problems and requirements with the Institute and the faculty for the competency courses. Even after your exams, you are always welcome to approach us for any guidance.
                         MMTI is also selected as preferred institute by FOSMA- MASSA for competency & modular courses Several “Best Training Institute” and “Best Student” awards are testimony to this fact.
                         Located in the heart of Mumbai at Andheri, we are close to Andheri Railway Station, a couple of hundred meters to two Metro lines and are also serviced by several bus routes & taxi services and easily accessible from Airport.
 
                         <br /><br />
-                        <h3>The MMTI is run professionally and promoted by </h3>
+                        <div className='heading'>The MMTI is run professionally and promoted by </div>
                         <p className='owner-info'>
                             <b>Capt. C. L. Dubey</b>, Director & Owner is a science graduate, Master Mariner, and Extra Master with over 20 years of sailing experience and 34 years as a maritime trainer. He has served as a paper setter, moderator, and examiner at Mumbai University, as well as a paper setter and examiner for the Directorate General of Shipping, Government of India. He has also been a fellow and warden of The Company of Master Mariners of India (CMMI). Capt. Dubey represented India as part of the delegation at the “Human Element, Training and Watchkeeping” Ninth Session (HTW9) meeting at IMO London in February 2023 and also participated in HTW 10 and HTW 11 as an online attendee. He is the author of several maritime textbooks used by students in India and abroad and was appointed as a “Competent Person” by IMO in February 2024.
                         </p>
@@ -29,7 +29,7 @@ export default function About() {
                         <p className='owner-info'>
                             <b>Capt. M. R. Martins</b>, Vice-Principal, is a Master Mariner with 10 years of sailing experience and 12 years of experience as a maritime trainer. He is also a member of the oral examination panel for the Directorate General of Shipping, Government of India, and is part of the paper correction group in D.G. Shipping
                         </p>
-                    </p>
+                    </div>
                 </div>
 
                 <div className="about-grid">

@@ -16,6 +16,7 @@
     justify-self: left;
     align-items: left;
     justify-content: left;
+
 }
 
 .logo {
@@ -23,6 +24,7 @@
     min-height: 30px;
     align-items: center;
     justify-content: center;
+    margin: 5px;
 }
 
 .hero-background {
@@ -856,6 +858,7 @@
     /* pull the wrapper up/down so it overlaps adjacent heroes */
     margin-top: -2px;
     margin-bottom: -2px;
+
 }
 
 .dialogue-box {

@@ -121,16 +121,16 @@ export default function Courses() {
               
 
               <h3 className="course-title">{course.title}</h3>
-              <p className="course-description">{course.description}</p>
+              {/* <p className="course-description">{course.description}</p> */}
 
-              <div className="course-highlights">
+              {/* <div className="course-highlights">
                 <h4>Highlights:</h4>
                 <ul>
                   {course.highlights.map((highlight, idx) => (
                     <li key={idx}>{highlight}</li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
 
               <button
                 onClick={() => handleFilterClick(course.title)}

@@ -142,7 +142,7 @@ export default function Courses() {
           ))}
         </div>
 
-        <div className="courses-cta">
+        {/* <div className="courses-cta">
           <h3>Ready to start your maritime career?</h3>
           <p>
             Book your seat today and join thousands of successful MMTI alumni
@@ -150,7 +150,7 @@ export default function Courses() {
           <a onClick={() => navigate("/enroll")} className="cta-btn">
             Book Your Seat
           </a>
-        </div>
+        </div> */}
       </div>
       
     </section>

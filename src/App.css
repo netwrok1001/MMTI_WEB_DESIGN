@@ -3,7 +3,22 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  
+}
+
+.page-transition {
+  display: block;
+  animation: fadeSlideIn 0.3s ease both;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .logo {

@@ -4,6 +4,11 @@
     background: linear-gradient(135deg, #f5f9fc 0%, #e8f4f8 100%);
     padding: 3rem 1rem;
 }
+html, body {
+  scroll-behavior: auto;
+  overflow-x: hidden;
+}
+
 
 .gallery-container {
     max-width: 1200px;

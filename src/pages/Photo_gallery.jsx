@@ -66,5 +66,6 @@ export default function PhotoGallery() {
             </div>
             <Footer />
         </section>
+        
     );
 }

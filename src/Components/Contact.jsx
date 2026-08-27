@@ -145,7 +145,7 @@ export default function Contact() {
                         </div>
 
                         <div className="contact-info-block">
-                            <strong>⚓ Practical Training Site:</strong>
+                            <strong>⚓Training Site: </strong>
                             <p className="address-text">
                                 MMTI Practical Site, Khopoli Facility, Maharashtra
                             </p>

@@ -155,15 +155,15 @@ export default function Contact() {
                             <strong>📞 Direct Contact Numbers:</strong>
                             <p className="address-text">
                                 • Course Info: <a href="tel:8976008861">8976008861</a> / <a href="tel:8097008862">8097008862</a><br />
-                                • WhatsApp Support: <a href="https://wa.me/919136397577" target="_blank" rel="noreferrer">9136397577</a>
+                                • WhatsApp Support: <a href="https://wa.me/919136397577" target="_blank" rel="noreferrer">9136397577 </a>/<a href="https://wa.me/918097008862 " target="_blank" rel="noreferrer">9136397577</a>
                             </p>
                         </div>
 
                         <div className="contact-info-block">
                             <strong>📧 Departmental Emails:</strong>
                             <p className="address-text">
-                                • Course Enquiry: <a href="mailto:mmti.mumbai@gmail.com">mmti.mumbai@gmail.com</a><br />
-                                • Doc Submission: <a href="mailto:modulartwo@mmti.co.in">modulartwo@mmti.co.in</a><br />
+                            
+                                •Course Enquiry & Doc Submission: <a href="mailto:modulartwo@mmti.co.in">modulartwo@mmti.co.in</a><br />
                                 • Verification: <a href="mailto:verify.mmtimum@gmail.com">verify.mmtimum@gmail.com</a>
                             </p>
                         </div>
@@ -172,7 +172,7 @@ export default function Contact() {
                         <div className="map-tabs-wrapper">
                             <div className="map-tab-buttons">
                                 <button
-                                    type="button"
+                                                    type="button"
                                     className={`map-tab-btn ${activeMapTab === 'office' ? 'active' : ''}`}
                                     onClick={() => setActiveMapTab('office')}
                                 >

@@ -154,8 +154,8 @@ export default function Contact() {
                         <div className="contact-info-block">
                             <strong>📞 Direct Contact Numbers:</strong>
                             <p className="address-text">
-                                • Course Info: <a href="tel:8976008861">8976008861</a> / <a href="tel:8097008862">8097008862</a><br />
-                                • WhatsApp Support: <a href="https://wa.me/919136397577" target="_blank" rel="noreferrer">9136397577 </a>/<a href="https://wa.me/918097008862 " target="_blank" rel="noreferrer">9136397577</a>
+                                • Course Info: <a href="tel:8976008861">+91 8976008861</a> / <a href="tel:8097008862">+91 8097008862</a><br />
+                                • WhatsApp Support: <a href="https://wa.me/919136397577" target="_blank" rel="noreferrer">+91 9136397577 </a>/<a href="https://wa.me/918097008862 " target="_blank" rel="noreferrer">+91 8097008862 </a>
                             </p>
                         </div>
 

@@ -144,12 +144,7 @@ export default function Contact() {
                             </p>
                         </div>
 
-                        <div className="contact-info-block">
-                            <strong>⚓Training Site: </strong>
-                            <p className="address-text">
-                                MMTI Practical Site, Khopoli Facility, Maharashtra
-                            </p>
-                        </div>
+                        
 
                         <div className="contact-info-block">
                             <strong>📞 Direct Contact Numbers:</strong>
@@ -178,17 +173,11 @@ export default function Contact() {
                                 >
                                     📍 Main Office Map
                                 </button>
-                                <button
-                                    type="button"
-                                    className={`map-tab-btn ${activeMapTab === 'khopoli' ? 'active' : ''}`}
-                                    onClick={() => setActiveMapTab('khopoli')}
-                                >
-                                    ⚓ Practical Site Map
-                                </button>
+                            
                             </div>
 
                             <div className="map-embed-container">
-                                {activeMapTab === 'office' ? (
+                                
                                     <iframe
                                         title="Main Office Map"
                                         src="https://maps.google.com/maps?q=Mumbai%20Maritime%20Training%20Institute%20Andheri%20West&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -198,17 +187,7 @@ export default function Contact() {
                                         allowFullScreen=""
                                         loading="lazy"
                                     ></iframe>
-                                ) : (
-                                    <iframe
-                                        title="Practical Site Map"
-                                        src="https://maps.google.com/maps?q=Khopoli%20Maharashtra&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                        width="100%"
-                                        height="200"
-                                        style={{ border: 0, borderRadius: '12px' }}
-                                        allowFullScreen=""
-                                        loading="lazy"
-                                    ></iframe>
-                                )}
+                        
                             </div>
                         </div>
 

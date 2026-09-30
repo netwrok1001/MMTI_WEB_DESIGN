@@ -92,7 +92,7 @@ export default function Hero() {
 
                     </div>
 
-                    <div className='advertisement-section'>
+                    {/* <div className='advertisement-section'>
                         <div className="advertisement-card">
                             <div className="ad-card-header">
                                 <h3 className="ad-card-title">Job Opportunities</h3>
@@ -109,7 +109,7 @@ export default function Hero() {
                             </ul>
                             <a href="#courses" className="ad-card-link">Read More →</a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
             </section>

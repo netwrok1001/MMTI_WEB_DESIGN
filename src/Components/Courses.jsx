@@ -53,6 +53,28 @@ export default function Courses() {
         "Builds confidence in handling emergencies and complex navigation situations",
       ],
     },
+     {
+      id: 7,
+      title: "UK MCA Approved Courses",
+      description:
+        "Advanced training using ship simulators for real-world scenarios.",
+      highlights: [
+        "ARPA and RANSCO ",
+        "Bridge resource management and cargo handling simulations",
+        "Builds confidence in handling emergencies and complex navigation situations",
+      ],
+    },
+     {
+      id: 8,
+      title: "Value Addition Courses",
+      description:
+        "Advanced training using ship simulators for real-world scenarios.",
+      highlights: [
+        "ARPA and RANSCO ",
+        "Bridge resource management and cargo handling simulations",
+        "Builds confidence in handling emergencies and complex navigation situations",
+      ],
+    },
   ];
 
   const handleFilterClick = (filter) => {

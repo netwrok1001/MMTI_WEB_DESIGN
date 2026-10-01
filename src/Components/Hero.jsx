@@ -60,7 +60,7 @@ export default function Hero() {
                 <div className="hero-content">
                     <div className="hero-text">
                         <h1 className="hero-title">NOW BOOK YOUR SEATS ONLINE </h1>
-                        <p className="hero-subtitle">27 Years of Excellence | ISO 9001:2015 DNV Certified | Industry-Leading Training for a Safer Sea</p>
+                        <p className="hero-subtitle">28 Years of Excellence | ISO 9001:2015 DNV Certified | Industry-Leading Training for a Safer Sea</p>
                         <div className="hero-cta-buttons">
                             <a href="#courses" className="cta-button primary">Explore Courses</a>
                             <a href="#about" className="cta-button secondary">Learn More</a>

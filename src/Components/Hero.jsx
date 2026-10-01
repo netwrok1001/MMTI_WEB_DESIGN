@@ -27,17 +27,23 @@ export default function Hero() {
         return () => window.removeEventListener('resize', checkScreenSize);
     }, []);
     useEffect(() => {
+        let timeoutId;
+
         const interval = setInterval(() => {
-            // fade out, change text, fade in
             setVisible(false);
-            setTimeout(() => {
+            timeoutId = setTimeout(() => {
                 setIndex((i) => (i + 1) % dialogues.length);
                 setVisible(true);
             }, 300);
         }, 10000);
 
-        return () => clearInterval(interval);
-    }, []);
+        return () => {
+            clearInterval(interval);
+            if (timeoutId) {
+                clearTimeout(timeoutId);
+            }
+        };
+    }, [dialogues.length]);
 
     return (
         <>

@@ -1,10 +1,8 @@
-import { useNavigate } from "react-router-dom";
 import "./Courses.css";
 import { useState } from "react";
 
 export default function Courses() {
   const [activeFilter, setActiveFilter] = useState("All");
-  const navigate = useNavigate();
   const courses = [
     
     {
@@ -57,15 +55,6 @@ export default function Courses() {
     },
   ];
 
-  const filterOptions = [
-    "All",
-    "Modular Courses",
-    "Package Courses",
-    "Refresher's Courses",
-    "Competency Courses",
-    "Simulator Courses",
-  ];
-
   const handleFilterClick = (filter) => {
     const urlMap = {
       "Modular Courses": 1,
@@ -77,11 +66,19 @@ export default function Courses() {
 
     if (filter === "All") {
       setActiveFilter(filter);
-    } else if (urlMap[filter]) {
-      window.location.href = `http://mmti.co.in/courses.aspx?Id=${urlMap[filter]}`;
-    } else {
-      setActiveFilter(filter);
+      return;
     }
+
+    if (urlMap[filter]) {
+      window.open(
+        `https://mmti.co.in/courses.aspx?Id=${urlMap[filter]}`,
+        "_blank",
+        "noopener,noreferrer"
+      );
+      return;
+    }
+
+    setActiveFilter(filter);
   };
 
   return (

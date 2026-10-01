@@ -1,19 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './Modal.css';
 
 export default function Modal() {
-    const [isOpen, setIsOpen] = useState(false);
-
-    useEffect(() => {
-        // Check if modal has been shown in this session
-        const hasShownModal = sessionStorage.getItem('importantNoticeShown');
-        if (!hasShownModal) {
-            setIsOpen(true);
-            sessionStorage.setItem('importantNoticeShown', 'true');
+    const [isOpen, setIsOpen] = useState(() => {
+        if (typeof window === 'undefined') {
+            return false;
         }
-    }, []);
+
+        return !sessionStorage.getItem('importantNoticeShown');
+    });
 
     const closeModal = () => {
+        sessionStorage.setItem('importantNoticeShown', 'true');
         setIsOpen(false);
     };
 

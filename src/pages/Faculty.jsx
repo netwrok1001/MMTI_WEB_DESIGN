@@ -3,8 +3,16 @@ import "./Faculty.css";
 
 export default function Faculty() {
   const directorData = [
-    { id: "", name: "CAPT. C. L. DUBEY, TRUSTEE / DIRECTOR" },
-    { id: "", name: "CAPT. O. P. YADAV, TRUSTEE / DIRECTOR" },
+    {
+      id: "1",
+      name: "Capt. C. L. Dubey",
+      image: "/photo_gallery/capt.cl dubey.png",
+    },
+    {
+      id: "2",
+      name: "Capt. O. P. Yadav",
+      image: "/photo_gallery/capt.op yadav.png",
+    },
   ];
 
   const facultyData = [
@@ -44,23 +52,16 @@ export default function Faculty() {
     <section id="faculty" className="faculty">
       <h2 className="section-title">Our Directors</h2>
       <div className="about-image">
-        <div className="director-card">
-          <img
-            src="/photo_gallery/capt.cl dubey.png"
-            alt="Capt. C. L. Dubey"
-            className="director-img"
-          />
-          <div className="director-name">Capt. C. L. Dubey</div>
-        </div>
-
-        <div className="director-card">
-          <img
-            src="/photo_gallery/capt.op yadav.png"
-            alt="Capt. O. P. Yadav"
-            className="director-img"
-          />
-          <div className="director-name">Capt. O. P. Yadav</div>
-        </div>
+        {directorData.map((director) => (
+          <div key={director.id} className="director-card">
+            <img
+              src={director.image}
+              alt={director.name}
+              className="director-img"
+            />
+            <div className="director-name">{director.name}</div>
+          </div>
+        ))}
       </div>
       <div className="faculty-container">
         <h2 className="section-title">Our Faculty</h2>
